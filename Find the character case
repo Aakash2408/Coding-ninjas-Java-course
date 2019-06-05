@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+public static void main(String args[]) {
+	Scanner s=new Scanner (System.in);
+char E;
+E=s.next().charAt(0);
+
+if(E>='a'&&E<='z')
+{System.out.println("0");
+}
+if(E>='A'&&E<='Z')
+{System.out.println("1");
+}
+else {System.out.println("-1");
+}
+}
+}
