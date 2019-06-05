@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+public class Solution{
+public static void main(String args[]) {
+	Scanner s=new Scanner(System.in);
+	int start,step,end,celcius;
+	start=s.nextInt();
+	end=s.nextInt();
+	step=s.nextInt();
+	while(start<=end){
+		celcius=(start-32)*5/9;
+		System.out.println(start+" \t "+celcius);
+		start=start+step;
+    }
+}
+}
