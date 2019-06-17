@@ -1,0 +1,35 @@
+Print the following pattern for the given N number of rows.
+Pattern for N = 4
+*
+**
+***
+****
+Input format :
+Integer N (Total no. of rows)
+Output format :
+Pattern in N lines
+
+
+
+Solution:
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+        
+int n=s.nextInt();
+
+        int i, j;
+        for(i=0; i<n; i++)
+        {
+            for(j=0; j<=i; j++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+	
