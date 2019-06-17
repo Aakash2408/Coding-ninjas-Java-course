@@ -1,0 +1,227 @@
+Q1.-----Primitive data type 'long' is having size _______ byte(s) in Java Programming.
+
+
+Q2.-----Which of the following data type stores longest decimal number ?
+
+1.long
+
+2.float
+
+3.double 
+
+4.short
+
+
+Q3.-----Which of these values can be assigned to a boolean variable in Java?
+Options
+
+a. 0 or 1
+
+b. Any integer value.
+
+c. True or False 
+
+d. Both options a and c
+
+
+Q4.-----Which of these is a valid variable name ?
+Options
+
+1var
+
+var1 
+
+var@1
+
+2_var
+
+
+Q5-----Compiler never assigns a default value to an uninitialized local variable in Java Programming. Whether this statement is true or false ?
+Options
+
+True 
+
+False
+
+
+Q6.-----What is the output of the following code if the input is : 5 10 ?
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+int b = s.nextInt();
+System.out.println(a+b);
+Options
+
+5
+
+10
+
+15 
+
+Error
+
+
+Q7.-----What is the output of the following code if the input string is "Coding Ninjas"?
+Scanner s = new Scanner(System.in);
+String str;
+str = s.next();
+System.out.print(str);
+Options
+
+Coding Ninjas
+
+Coding 
+
+Ninjas
+
+The above code fragment does not compile
+
+
+Q8.-----What is the output of the following code if input is : 10 abc def
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+String str = s.next();
+System.out.print(a);
+System.out.println(str);
+Options
+
+10 abc def
+
+10abc 
+
+10abcdef
+
+10 abc
+
+
+Q9..-----What is the output of the following code if input is : abc def 10
+Scanner s = new Scanner(System.in);
+String str = s.next();
+int a = s.nextInt();
+System.out.print(str + " " + a);
+Options
+
+abc def 10
+
+abc 10
+
+InputMismatchException 
+
+abc InputMismatchException
+
+
+Q10.-----Write a program to input name (as a single character) and marks of three tests of a student (all integers). Then calculate and print the name and average (integer) of all test marks.
+All the test marks are integers and calculate average also as integer. That is, you need to print the integer part of average only, neglect the decimal part.
+Input format :
+Line 1 : Name (Single character)
+Line 2 : 3 Test marks (separated by space)
+Output format :
+Name Average (in different lines)
+Sample Input 1 :
+A
+3 4 6
+Sample Output 1 :
+A
+4
+
+
+Q11.-----Will following statement give an error ?
+float f = 1.4;
+Options
+
+Yes 
+
+No
+
+
+Q12-----What will be the output of the following statement ?
+System.out.println(‘a’ + 1);
+Answer
+-----
+Type here
+
+
+Q13.-----What will be the output ?
+int i = ‘c’;
+System.out.println(i);
+
+
+Q14.-----utomatic type conversion in Java takes place when :
+Options
+
+1. Two type are compatible and size of destination type is shorter than source type.
+
+2. Two type are compatible and size of destination type is larger than source type. 
+
+3. Both 1 and 2
+
+4. None of the above
+
+
+Q15.-----Short data type has a minimum value of -
+Options
+
+-2,147,483,648
+
+-32,768 
+
+-32,767
+
+-127
+
+
+Q16.-----Range of byte data type is ?
+Options
+
+-128 to 255
+
+-128 to 256
+
+-128 to 127 
+
+-127 to 128
+
+
+Q17.-----Predict the output
+
+public class  Solution{
+    public static void main(String [] args)  {
+        double a = 55.5;
+        int b = 55;
+        a = a % 10;
+        b = b % 10;
+        System.out.println(a + " "  + b);
+      }
+ }
+Options
+
+5 5
+
+5.5 5 
+
+6 5
+
+None of these
+
+
+Q18.-----Predict the output
+Send Feedback
+public class  Solution {
+    public static void main(String [] args)  {
+        int var1 = 5;
+        int var2 = 6;
+        System.out.print(var1 > var2);
+    }
+}
+Options
+
+true
+
+false 
+
+0
+
+1
+
+
+
+
