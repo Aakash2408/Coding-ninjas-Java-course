@@ -1,0 +1,32 @@
+Question.-----
+
+Given a number N, print sum of all even numbers from 1 to N.
+Input Format :
+Integer N
+Output Format :
+Required Sum 
+Sample Input 1 :
+ 6
+Sample Output 1 :
+12
+
+
+solution:
+
+
+import java.util.Scanner;
+public class Solution{
+	public static void main(String args[]) {
+		Scanner s =new Scanner (System.in);
+	int N,n=1,so=0;
+	N=s.nextInt();
+	while (n<=N) {
+	
+	if (n % 2 == 0){
+		so=so+n;
+				
+
+}n=n+1;
+    }System.out.println(so);
+	}
+}
