@@ -1,0 +1,31 @@
+Print the following pattern for the given number of rows.
+Pattern for N = 5
+E
+DE
+CDE
+BCDE
+ABCDE
+
+
+Solution:
+
+public class solution {
+
+	public static void print(int n) {
+        int i,j;
+        char ch='A',c;
+        ch = (char)(ch + n - 1);
+
+        for (i = 1; i <= n; i++)
+        {
+            c=ch;
+            for (j = 1; j<= i; j++)
+            {
+                System.out.print(c);
+                c++;
+            }
+            ch--;
+            System.out.println();
+        }
+    }
+}
