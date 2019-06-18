@@ -1,0 +1,33 @@
+Nth term of fibonacci series F(n) is calculated using following formula -
+    F(n) = F(n-1) + F(n-2), 
+Provided N you have to find out the Nth Fibonacci Number. Also F(1) = F(2) = 1.
+
+
+
+output:
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner s =new Scanner (System.in);
+int n=s.nextInt();  
+
+
+        int i = 1,  t1 = 0, t2 = 1;
+        System.out.print("First " + n + " terms: ");
+
+        while (i <= n)
+        {
+            System.out.print(t1 + " + ");
+
+            int sum = t1 + t2;
+            t1 = t2;
+            t2 = sum;
+
+            i++;
+        }
+    }
+}
+     
+  
