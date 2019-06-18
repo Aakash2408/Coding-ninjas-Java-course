@@ -1,0 +1,32 @@
+Write a program to generate the reverse of a given number N. Print the corresponding reverse number.
+Input format :
+Integer N
+Constraints:
+Time Limit: 1 second
+Output format :
+Corresponding reverse number
+
+
+
+
+import java.util.Scanner;
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+          int n;
+        n=s.nextInt();
+         int rev=0;
+           
+        while(n> 0) 
+        { 
+            rev = rev*10 + n%10; 
+            n= n/10; 
+        
+    }    
+        System.out.println(rev);
+	}
+    
+}
