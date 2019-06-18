@@ -1,0 +1,40 @@
+Print the following pattern
+Pattern for N = 4
+    *
+   *** 
+  *****
+ *******
+ 
+ 
+ 
+ import java.util.Scanner;
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        // Create a new Scanner object
+        Scanner scanner = new Scanner(System.in);
+
+       
+
+        int rows = scanner.nextInt();
+        
+        
+        for (int i=1; i<=rows; i++) 
+        { 
+            // Print space in decreasing order 
+            for (int j=rows; j>i; j--)
+            {
+                System.out.print(" ");
+            }
+            // Print star in increasing order
+            for (int k=1; k<=(i * 2) -1; k++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
