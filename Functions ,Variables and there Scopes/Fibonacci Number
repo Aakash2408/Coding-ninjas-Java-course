@@ -1,0 +1,35 @@
+Given a number N, figure out if it is a member of fibonacci series or not. Return true if the number is member of fibonacci series else false.
+Fibonacci Series is defined by the recurrence
+    F(n) = F(n-1) + F(n-2)
+Input Format :
+Integer N
+Output Format :
+true or false
+
+
+
+
+
+
+import java.util.Scanner;
+public class Solution {
+	static  boolean isPerfectSquare(int x) 
+    { 
+        int s = (int) Math.sqrt(x); 
+        return (s*s == x); 
+    } 
+    static boolean isFibonacci(int n) 
+    { 
+        // n is Fibonacci if one of 5*n*n + 4 or 5*n*n - 4 or both 
+        // is a perfect square 
+        return isPerfectSquare(5*n*n + 4) || 
+               isPerfectSquare(5*n*n - 4); 
+    } 
+	public static boolean checkMember(int n){   
+    { 
+         if(isFibonacci(n))
+             return true;
+        return false;
+    } 
+} 
+}
