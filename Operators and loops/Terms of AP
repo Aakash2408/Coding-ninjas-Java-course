@@ -1,0 +1,40 @@
+Write a program to print first x terms of the series 3N + 2 which are not multiples of 4.
+N varies from 1 to 1000.
+Input format :
+Integer x
+Output format :
+Terms of series (separated by space)
+
+
+
+
+
+
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+
+
+
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+
+		int sum=0;
+	    int count=0;
+        int i=1;
+        while(count<n){
+        sum= 3*i+2;
+            i++;
+            if(sum%4!=0){
+                System.out.print(sum+" ");
+                count++;
+            }
+        }
+		
+		
+	}
+
+}
+
