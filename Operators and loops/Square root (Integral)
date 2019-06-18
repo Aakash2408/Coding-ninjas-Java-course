@@ -1,0 +1,49 @@
+Given a number N, find its square root. You need to find and print only the integral part of square root of N.
+For eg. if number given is 18, answer is 4.
+Input format :
+Integer N
+Output Format :
+Square root of N (integer part only)
+
+
+
+
+
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+
+     
+int n;
+         
+        Scanner  s= new Scanner(System.in);        
+         
+        //System.out.println("Enter Number to find its square root-");
+        n = s.nextInt();  
+         int i=1;
+        while(i*i<=n)
+        {
+            i++;
+        }
+        System.out.print(i-1);
+    /*double rootValue = 1.00;
+    double num = n;
+     
+    for (int i = 0; i < n; i++) {
+         
+        rootValue = 0.5 * (rootValue + num/rootValue);
+    }   
+     
+    
+    int returnValue = (int)(rootValue * 1000);  
+    rootValue = returnValue;
+    rootValue /=1000;
+     
+    System.out.println("Root Value Calculated : " + rootValue);*/
+   
+     
+    
+     
+    }}
