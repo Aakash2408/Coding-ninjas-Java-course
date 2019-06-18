@@ -1,0 +1,41 @@
+Write a program that asks the user for a number N and a choice C. And then give him the possibility to choose between computing the sum and computing the product of 1 ,..., N.
+If user enters C is equal to -
+ 1 : Print sum of 1 to N numbers
+ 2 : Print product of 1 to N numbers
+ Any other number : print -1
+ 
+ 
+ 
+ 
+ import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+Scanner s = new Scanner(System.in);
+    int i=1,sum=0,product=1;
+        int N=s.nextInt();
+        int choices = s.nextInt();
+  for (i=1;i<=N;i++){
+        sum=sum+i;
+         product=product*i;
+  }
+        
+      if ( choices == 1 ){
+          System.out.println(sum);
+      }
+        
+      else if ( choices == 2 ){
+         System.out.println(product);
+          
+      }
+    
+        else {
+            System.out.print(-1);
+        }
+    
+        
+        
+    
+    }
+    
+}
