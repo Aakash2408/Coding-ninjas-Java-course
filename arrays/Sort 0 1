@@ -1,0 +1,27 @@
+You are given an integer array A that contains only integers 0 and 1. Write a function to sort this array. Find a solution which scans the array only once. Don't use extra array.
+You need to change in the given array itself. So no need to return or print anything.
+
+
+
+
+public class SortBinaryArray{	
+
+	public static void sortBinaryArray(int[] arr){
+		/* Your class should be named SortBinaryArray.
+		 * Don't write main().
+     		 * Don't read input, it is passed as function argument.
+     		 * Update in the given array itself. Don't return or print anything.
+     		 * Taking input and printing output is handled automatically.
+                 */
+
+  int j=0;
+        for(int i=0;i<arr.length;i++){
+        if(arr[i]==0){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        j++;
+        }
+        }
+    }
+}
